@@ -53,7 +53,7 @@ int main()
     {
         circle C;
         cin >> C.X >> C.Y >> C.R;
-        if ((distance(px, py, C.X - x1, C.Y - y1) < C.R) && (((-1 * px) * (C.X - x1) + (-1 * py) * (C.Y - y1)) <= 0)) numbers[i] = i + 1;
+        if ((distance(px, py, C.X - x1, C.Y - y1) < C.R) && (((px) * (C.X - x1) + (py) * (C.Y - y1)) >= 0)) numbers[i] = i + 1;
         else numbers[i] = 0;
     }
 
@@ -62,3 +62,4 @@ int main()
         if (numbers[i]) cout << numbers[i] << " ";
     }
 }
+
